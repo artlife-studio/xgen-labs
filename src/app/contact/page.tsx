@@ -3,7 +3,7 @@ import { Building2, Mail, MessageCircle } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
-import { absoluteUrl, pageMetadata } from "@/lib/site";
+import { SITE, absoluteUrl, pageMetadata } from "@/lib/site";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contact & Where to Buy",
@@ -50,9 +50,9 @@ export default function ContactPage() {
       <section className="mx-auto grid max-w-[1440px] gap-10 px-4 py-16 sm:px-8 lg:grid-cols-[1fr_1.6fr] lg:py-24">
         <ul className="space-y-4">
           {[
-            { icon: Mail, t: "Customer support", d: "support@xgenslabs.com" },
+            { icon: Mail, t: "Customer support", d: SITE.email },
             { icon: MessageCircle, t: "Chat with us", d: "Telegram & WhatsApp, 9:00–21:00" },
-            { icon: Building2, t: "Wholesale", d: "partners@xgenslabs.com", id: "wholesale" },
+            { icon: Building2, t: "Wholesale", d: SITE.wholesaleEmail, id: "wholesale" },
           ].map(({ icon: Icon, t, d, id }) => (
             <li key={t} id={id} className="flex scroll-mt-28 gap-5 rounded-md border border-line bg-panel p-6">
               <Icon className="h-7 w-7 shrink-0 text-lime" strokeWidth={1.6} />

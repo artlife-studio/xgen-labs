@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const SITE = {
   name: "XGENS LABS",
   // Set NEXT_PUBLIC_SITE_URL to the production domain (no trailing slash).
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://xgenslabs.com").replace(/\/$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.xgenslabsnutrition.com").replace(/\/$/, ""),
   title: "XGENS LABS — Premium Sports Nutrition",
   tagline: "Fuel your next level",
   description:
@@ -21,8 +21,8 @@ export const SITE = {
     "bodybuilding",
     "fitness nutrition",
   ],
-  email: "support@xgenslabs.com",
-  wholesaleEmail: "partners@xgenslabs.com",
+  email: "support@xgenslabsnutrition.com",
+  wholesaleEmail: "partners@xgenslabsnutrition.com",
   locale: "en_US",
   // Last content update — used for sitemap lastModified.
   updated: "2026-10-16",
