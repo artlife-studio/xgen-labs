@@ -85,7 +85,12 @@ export function Footer() {
 
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-[1440px] flex-col gap-4 px-4 py-6 text-xs text-mute sm:px-8 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 XGENS LABS. All rights reserved.</p>
+          <p>
+            © 2026 XGENS LABS. All rights reserved. Website by{" "}
+            <a href="https://artlife-studio.uz/" target="_blank" rel="noopener" className="underline hover:text-white">
+              ArtLife Web Studio
+            </a>
+          </p>
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
             <li><Link href="/contact#faq" className="hover:text-white">Privacy Policy</Link></li>
             <li><Link href="/contact#faq" className="hover:text-white">Terms & Conditions</Link></li>
